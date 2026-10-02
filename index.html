@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Презентация OPEN SWIM (ОС) | Инвестиционный проект</title>
+  <!-- Reveal.js CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .reveal { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #090d16; }
+    .reveal .slides section { padding: 20px; text-align: left; }
+    .os-badge-o { color: #EF4444; border: 3px solid #EF4444; border-radius: 9999px; }
+    .os-badge-s { color: #3B82F6; border: 3px solid #3B82F6; border-radius: 9999px; }
+    .table-custom th { background: #1e293b; color: #94a3b8; font-size: 13px; text-transform: uppercase; padding: 8px 12px; }
+    .table-custom td { padding: 8px 12px; border-bottom: 1px solid #334155; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- СЛАЙД 1: ТИТУЛЬНЫЙ И БРЕНД -->
+      <section>
+        <div class="flex items-center gap-6 mb-6">
+          <div class="flex items-center gap-1 font-black text-6xl tracking-tighter">
+            <span class="w-16 h-16 rounded-full border-4 border-red-500 text-red-500 flex items-center justify-center">О</span>
+            <span class="w-16 h-16 rounded-full border-4 border-blue-500 text-blue-500 flex items-center justify-center">С</span>
+          </div>
+          <div>
+            <h1 class="text-4xl font-black text-white tracking-wide">OPEN SWIM</h1>
+            <p class="text-slate-400 text-sm font-semibold uppercase tracking-widest">Сеть высокотехнологичных плавательных коворкингов • Владивосток</p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-950/40 via-slate-900 to-red-950/40 border border-slate-700/60 p-6 rounded-3xl mt-4">
+          <h2 class="text-2xl font-black text-white mb-2">Инвестиционный проект: плавательный комплекс на 8 дорожек</h2>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Первый на Дальнем Востоке водный комплекс по гибридной модели: B2C-подписка со свободным посещением (2 900 ₽/мес.) + фиксированный B2B-коворкинг для аккредитованных тренеров-резидентов (55 000 ₽/мес.).
+          </p>
+          <div class="grid grid-cols-4 gap-4 pt-4 border-t border-slate-700/50 text-center">
+            <div>
+              <span class="text-slate-400 text-xs uppercase block">Инвестиции (CAPEX)</span>
+              <span class="text-xl font-black text-red-500">320,0 млн ₽</span>
+            </div>
+            <div>
+              <span class="text-slate-400 text-xs uppercase block">Срок окупаемости</span>
+              <span class="text-xl font-black text-white">4,4 года (53 мес.)</span>
+            </div>
+            <div>
+              <span class="text-slate-400 text-xs uppercase block">Доля инвестора</span>
+              <span class="text-xl font-black text-blue-400">75% ООО</span>
+            </div>
+            <div>
+              <span class="text-slate-400 text-xs uppercase block">EBITDA (3-й год)</span>
+              <span class="text-xl font-black text-emerald-400">83,66 млн ₽</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- СЛАЙД 2: АРХИТЕКТУРА И ФАСАД -->
+      <section>
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-black text-white"><span class="text-red-500">Внешний облик</span> и концепция здания</h2>
+          <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full font-bold">Снеговая Падь • 2 600 кв. м</span>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl flex flex-col justify-between">
+            <div>
+              <h3 class="text-white font-bold text-base mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-building text-blue-500"></i> Быстровозводимый комплекс
+              </h3>
+              <ul class="text-xs text-slate-300 space-y-2 leading-relaxed">
+                <li>• Металлокаркас с антикоррозийным полимерным покрытием для влажных зон.</li>
+                <li>• Ограждающие PIR-панели 150–200 мм (негорючие, энергоэффективные).</li>
+                <li>• Витражное остекление входного атриума с контрастной подсветкой в стиле хай-тек.</li>
+                <li>• Земельный участок 0,5–0,7 га с собственной парковкой на 70 машино-мест.</li>
+              </ul>
+            </div>
+            <div class="mt-4 p-3 bg-slate-950 border border-slate-800 rounded-xl text-center">
+              <span class="text-xs font-mono text-slate-400 block mb-1">Вывеска главного входа</span>
+              <div class="inline-flex items-center gap-2 font-black text-xl tracking-wider">
+                <span class="text-red-500">OPEN</span>
+                <span class="text-blue-500">SWIM</span>
+                <span class="text-[10px] bg-red-600/20 text-red-400 border border-red-500/30 px-2 py-0.5 rounded">ВЛАДИВОСТОК</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl flex flex-col justify-between">
+            <h3 class="text-white font-bold text-base mb-2 flex items-center gap-2">
+              <i class="fa-solid fa-water text-cyan-400"></i> Параметры чаши и акватории
+            </h3>
+            <ul class="text-xs text-slate-300 space-y-2 leading-relaxed">
+              <li>• Монолитный железобетон B30 W8 F150 с переливным лотком финского типа.</li>
+              <li>• Габариты чаши: <b>25 × 19 метров</b> (8 дорожек по 2,25–2,50 м).</li>
+              <li>• Водный объем: <b>760 куб. м</b> с полным циклом водообмена за 4 часа.</li>
+              <li>• Озонирование, напорная фильтрация и УФ-реакторы среднего давления.</li>
+              <li>• Вентиляция с тепловым насосом-осушителем (28 000 куб. м/ч).</li>
+            </ul>
+            <div class="mt-4 flex gap-2">
+              <span class="flex-1 text-center py-2 bg-blue-950/40 border border-blue-500/30 rounded-xl text-xs font-bold text-blue-300">Вода: +28°C</span>
+              <span class="flex-1 text-center py-2 bg-red-950/40 border border-red-500/30 rounded-xl text-xs font-bold text-red-300">Воздух: +29°C</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- СЛАЙД 3: ИННОВАЦИОННЫЙ ПРОФИЛЬ ДНА -->
+      <section>
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-black text-white"><span class="text-blue-500">Профиль дна</span> и безопасность (СП 310.1325800.2017)</h2>
+          <span class="text-xs bg-red-950 border border-red-500/30 text-red-300 px-3 py-1 rounded-full font-bold">Обучение с нуля + Профи</span>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl mb-4">
+          <div class="flex justify-between text-xs font-bold text-slate-400 mb-2">
+            <span>Старт / Римская лестница (6 м)</span>
+            <span>Зона плавного уклона (9 м)</span>
+            <span>Глубокая спортивная зона (10 м)</span>
+          </div>
+          <!-- Схема чаши -->
+          <div class="h-24 w-full bg-slate-950 border border-slate-800 rounded-xl relative overflow-hidden flex">
+            <div class="w-[24%] bg-blue-900/40 border-r border-blue-500/40 flex flex-col justify-between p-2">
+              <span class="text-[10px] text-blue-400 font-extrabold uppercase">Мелкая часть</span>
+              <span class="text-base font-black text-white">1,10 - 1,25 м</span>
+            </div>
+            <div class="w-[36%] bg-gradient-to-r from-blue-900/40 to-blue-950/80 border-r border-blue-500/40 flex flex-col justify-between p-2">
+              <span class="text-[10px] text-slate-400 font-extrabold uppercase">Уклон не более 6%</span>
+              <span class="text-xs text-slate-300 font-bold text-center">Плавный переход</span>
+            </div>
+            <div class="w-[40%] bg-blue-950 flex flex-col justify-between p-2">
+              <span class="text-[10px] text-cyan-400 font-extrabold uppercase">Глубоководный сектор</span>
+              <span class="text-base font-black text-white">1,80 - 2,00 м</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl text-xs text-slate-300 space-y-1.5">
+            <b class="text-white block text-sm mb-1 text-red-400">Преимущества для детского обучения:</b>
+            <p>• Тренер (175–185 см) устойчиво стоит на дне с уровнем воды по грудь, обеспечивая непрерывную страховку детей руками.</p>
+            <p>• Римская монолитная лестница с низким подступенком (150 мм) и поручнями AISI 316 позволяет детям и аквафобам спокойно заходить в воду пешком.</p>
+          </div>
+          <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl text-xs text-slate-300 space-y-1.5">
+            <b class="text-white block text-sm mb-1 text-blue-400">Преимущества для спортивного плавания:</b>
+            <p>• Сектор 1,80–2,00 м гарантирует безопасность прыжков со стартовых тумб и отработку скоростных сальто-разворотов.</p>
+            <p>• Волногасящие разделители 150 мм гасят до 90% кинетической энергии волны, полностью изолируя детскую зону от скоростных пловцов.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- СЛАЙД 4: ЗОНИРОВАНИЕ 8 ДОРОЖЕК В ПИК -->
+      <section>
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-black text-white">Зонирование воды: <span class="text-emerald-400">ликвидация давки</span></h2>
+          <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full font-bold">Санитарный лимит: 95 чел. | Факт в пик: 46 чел.</span>
+        </div>
+
+        <div class="space-y-2">
+          <!-- 4 дорожки -->
+          <div class="bg-blue-950/40 border border-blue-500/40 p-3 rounded-xl flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-blue-600 text-white font-black flex items-center justify-center text-xs">1-4</span>
+              <div>
+                <h4 class="text-white font-bold text-xs uppercase tracking-wide">Свободное плавание (по подписке 2 900 ₽)</h4>
+                <p class="text-[11px] text-slate-400">Разделение по скоростям: скоростной кроль • спортивный темп • брасс/спина • медленное оздоровительное</p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-white bg-slate-900 px-3 py-1 rounded-lg border border-slate-700">6–7 чел. / дорожка</span>
+          </div>
+
+          <!-- 3 дорожки -->
+          <div class="bg-red-950/40 border border-red-500/40 p-3 rounded-xl flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-red-600 text-white font-black flex items-center justify-center text-xs">5-7</span>
+              <div>
+                <h4 class="text-white font-bold text-xs uppercase tracking-wide">Тренерский коворкинг (пул из 14 резидентов)</h4>
+                <p class="text-[11px] text-slate-400">Мини-группы (до 4 чел.), сплит-тренировки и шеринг дорожки №5 между двумя независимыми тренерами</p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-white bg-slate-900 px-3 py-1 rounded-lg border border-slate-700">3–4 чел. / дорожка</span>
+          </div>
+
+          <!-- 1 дорожка -->
+          <div class="bg-cyan-950/40 border border-cyan-500/40 p-3 rounded-xl flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-cyan-600 text-white font-black flex items-center justify-center text-xs">8</span>
+              <div>
+                <h4 class="text-white font-bold text-xs uppercase tracking-wide">Обучение плаванию и клубные группы</h4>
+                <p class="text-[11px] text-slate-400">Пристенная дорожка с римской лестницей: детские секции, взрослые с водобоязнью, аквааэробика</p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-white bg-slate-900 px-3 py-1 rounded-lg border border-slate-700">Изоляция у борта</span>
+          </div>
+        </div>
+
+        <p class="text-slate-400 text-xs mt-3 leading-relaxed">
+          <b>Вывод:</b> Даже в пиковый час (18:30–21:00) удельная площадь воды составляет <b>10,3–12,5 кв. м на пловца</b>. Человек не плывет в затылок другому пловцу, что исключает конфликтные ситуации.
+        </p>
+      </section>
+
+      <!-- СЛАЙД 5: МОДЕЛЬ ТРЕНЕРСКОГО КОВОРКИНГА -->
+      <section>
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-black text-white">B2B-коворкинг: <span class="text-red-500">55 000 ₽ / мес.</span></h2>
+          <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full font-bold">Лимит: 14 резидентов</span>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl">
+            <span class="text-xs uppercase text-slate-400 font-bold block mb-2">Экономика тренера-резидента</span>
+            <div class="space-y-1.5 text-xs text-slate-300">
+              <div class="flex justify-between py-1 border-b border-slate-800">
+                <span>График работы:</span>
+                <b class="text-white">4 часа в день (22 дня/мес)</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-800">
+                <span>Формат:</span>
+                <b class="text-white">2 группы (по 4 чел) + 2 персоналки</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-800">
+                <span>Валовая выручка тренера:</span>
+                <b class="text-emerald-400">356 400 ₽ / мес</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-800">
+                <span>Фиксированная аренда клубу:</span>
+                <b class="text-red-400">-55 000 ₽ / мес</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-800">
+                <span>Налог самозанятого (НПД 4%):</span>
+                <b class="text-slate-400">-14 256 ₽ / мес</b>
+              </div>
+              <div class="flex justify-between pt-2 text-sm font-black">
+                <span class="text-white">Чистый доход тренера:</span>
+                <span class="text-emerald-400">287 144 ₽ / мес</span>
+              </div>
+            </div>
+            <p class="text-[10px] text-blue-300 mt-2">*В 3,5 раза выше, чем наемная ставка 40% в СК «Чемпион»</p>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase text-slate-400 font-bold block mb-2">Выгода для комплекса OPEN SWIM</span>
+              <ul class="text-xs text-slate-300 space-y-2">
+                <li>• <b>9,24 млн ₽ чистой аренды в год</b> поступает 1-го числа каждого месяца независимо от сезона.</li>
+                <li>• <b>0 затрат на кадровый учет:</b> тренеры не состоят в штате, нет больничных, отпусков и проверок трудовой инспекции.</li>
+                <li>• Тренеры сами приводят клиентов на свои персональные занятия и мини-группы.</li>
+              </ul>
+            </div>
+            <div class="p-3 bg-red-950/40 border border-red-500/30 rounded-xl text-center">
+              <span class="text-xs text-red-300 font-bold">14 тренеров × 55 000 ₽ = 770 000 ₽ в месяц гарантированно</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- СЛАЙД 6: БЮДЖЕТ CAPEX (320 МЛН РУБ.) -->
+      <section>
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-black text-white">Смета инвестиций <span class="text-blue-400">(CAPEX: 320 млн ₽)</span></h2>
+          <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full font-bold">Строительство под ключ</span>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full table-custom text-left">
+            <thead>
+              <tr>
+                <th>Статья капитальных затрат</th>
+                <th class="text-right">Сумма (млн ₽)</th>
+                <th class="text-right">Доля (%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Быстровозводимый корпус 2 600 кв. м (каркас, PIR-панели, кровля)</td><td class="text-right font-bold text-white">68,0</td><td class="text-right text-slate-400">21,25%</td></tr>
+              <tr><td>Железобетонная чаша 25 × 19 м (переменный профиль, мозаика)</td><td class="text-right font-bold text-white">48,0</td><td class="text-right text-slate-400">15,00%</td></tr>
+              <tr><td>Приточно-вытяжная вентиляция с осушением и рекуперацией</td><td class="text-right font-bold text-white">35,0</td><td class="text-right text-slate-400">10,94%</td></tr>
+              <tr><td>Технологическое оборудование водоподготовки (озон, УФ, фильтры)</td><td class="text-right font-bold text-white">34,0</td><td class="text-right text-slate-400">10,63%</td></tr>
+              <tr><td>Отделка, раздевалки HPL на 400 мест, душевые, сауны</td><td class="text-right font-bold text-white">29,0</td><td class="text-right text-slate-400">9,06%</td></tr>
+              <tr><td>Земляные работы, вертикальная планировка, фундаментная плита</td><td class="text-right font-bold text-white">28,0</td><td class="text-right text-slate-400">8,75%</td></tr>
+              <tr><td>Внутренние и внешние технологические сети (э/э 250 кВт, тепло, вода)</td><td class="text-right font-bold text-white">44,5</td><td class="text-right text-slate-400">13,90%</td></tr>
+              <tr><td>Проектирование, СКУД (Face-ID), спортинвентарь и оборотный капитал</td><td class="text-right font-bold text-white">33,5</td><td class="text-right text-slate-400">10,47%</td></tr>
+              <tr class="bg-slate-800/60 font-black"><td class="text-white">ИТОГО ОБЪЕМ ИНВЕСТИЦИЙ</td><td class="text-right text-red-500 text-base">320,0</td><td class="text-right text-white">100,00%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- СЛАЙД 7: ФИНАНСОВЫЙ ПЛАН (5 ЛЕТ) -->
+      <section>
+        <div class="flex justify-between items-center mb-3">
+          <h2 class="text-2xl font-black text-white">Финансовые показатели <span class="text-emerald-400">(5-летний план)</span></h2>
+          <span class="text-xs bg-emerald-950 border border-emerald-500/40 text-emerald-300 px-3 py-1 rounded-full font-bold">Окупаемость: 4,4 года (53 мес.)</span>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full table-custom text-left">
+            <thead>
+              <tr>
+                <th>Показатель (млн руб.)</th>
+                <th class="text-center">Год 1</th>
+                <th class="text-center">Год 2</th>
+                <th class="text-center bg-blue-950/40">Год 3 (План)</th>
+                <th class="text-center">Год 4</th>
+                <th class="text-center">Год 5</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Активные подписчики (чел.)</td><td class="text-center">1 400</td><td class="text-center">2 400</td><td class="text-center font-bold bg-blue-950/20 text-white">2 600</td><td class="text-center">2 700</td><td class="text-center">2 750</td></tr>
+              <tr><td>Выручка от подписок</td><td class="text-center">48,72</td><td class="text-center">83,52</td><td class="text-center font-bold bg-blue-950/20 text-white">96,72</td><td class="text-center">106,92</td><td class="text-center">115,50</td></tr>
+              <tr><td>Выручка: коворкинг тренеров</td><td class="text-center">7,26</td><td class="text-center">9,24</td><td class="text-center font-bold bg-blue-950/20 text-white">9,74</td><td class="text-center">10,08</td><td class="text-center">10,58</td></tr>
+              <tr><td>Дополнительные услуги</td><td class="text-center">6,60</td><td class="text-center">10,20</td><td class="text-center font-bold bg-blue-950/20 text-white">11,40</td><td class="text-center">12,60</td><td class="text-center">13,80</td></tr>
+              <tr class="font-bold text-white"><td>СОВОКУПНАЯ ВЫРУЧКА</td><td class="text-center">62,58</td><td class="text-center">102,96</td><td class="text-center bg-blue-950/20 text-blue-400">117,86</td><td class="text-center">129,60</td><td class="text-center">139,88</td></tr>
+              <tr><td>Операционные затраты (OPEX)</td><td class="text-center text-slate-400">29,40</td><td class="text-center text-slate-400">32,40</td><td class="text-center text-slate-400 bg-blue-950/20">34,20</td><td class="text-center text-slate-400">36,00</td><td class="text-center text-slate-400">37,80</td></tr>
+              <tr class="font-black text-emerald-400 text-base"><td>EBITDA / Чистая прибыль</td><td class="text-center">33,18</td><td class="text-center">70,56</td><td class="text-center bg-blue-950/20">83,66</td><td class="text-center">93,60</td><td class="text-center">102,08</td></tr>
+              <tr><td>Рентабельность EBITDA (%)</td><td class="text-center">53,0%</td><td class="text-center">68,5%</td><td class="text-center bg-blue-950/20 font-bold text-white">71,0%</td><td class="text-center">72,2%</td><td class="text-center">73,0%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- СЛАЙД 8: СТРУКТУРА СДЕЛКИ (WATERFALL) -->
+      <section>
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-black text-white">Структура партнерства <span class="text-red-500">(Waterfall)</span></h2>
+          <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full font-bold">75% Инвестор / 25% Фаундер</span>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl border-l-4 border-l-blue-500">
+            <span class="text-[10px] uppercase tracking-wider text-blue-400 font-extrabold block">Фаза 1: Возврат тела инвестиций (Годы 1–4,4)</span>
+            <h3 class="text-lg font-black text-white mt-1 mb-2">Приоритет инвестора (85 / 15)</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-3">
+              <b>85% всей операционной прибыли (EBITDA)</b> перечисляется напрямую инвестору для ускоренного возврата 320,0 млн рублей.
+            </p>
+            <p class="text-xs text-slate-400">
+              15% EBITDA направляется основателю в качестве дивидендного стимула (плюс оклад генерального директора 150 000 ₽/мес).
+            </p>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl border-l-4 border-l-emerald-500">
+            <span class="text-[10px] uppercase tracking-wider text-emerald-400 font-extrabold block">Фаза 2: Пожизненная доходность (С 5-го года)</span>
+            <h3 class="text-lg font-black text-white mt-1 mb-2">Пропорционально долям (75 / 25)</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-3">
+              После полного возврата 320 млн рублей чистая прибыль распределяется строго по долям владения:
+            </p>
+            <div class="space-y-1 text-xs">
+              <div class="flex justify-between text-white font-bold">
+                <span>Инвестор (75%):</span>
+                <span class="text-emerald-400">от 76,5 млн ₽ в год</span>
+              </div>
+              <div class="flex justify-between text-white font-bold">
+                <span>Управляющий партнер (25%):</span>
+                <span class="text-blue-400">от 25,5 млн ₽ в год</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 p-3 bg-slate-950 border border-slate-800 rounded-xl text-xs text-slate-300">
+          <b>Call Option для основателя:</b> право выкупа до 15% доли компании по фиксированному мультипликатору <b>4,0 × EBITDA</b> строго после возврата вложений инвестору и при EBITDA от 80 млн ₽.
+        </div>
+      </section>
+
+      <!-- СЛАЙД 9: ЮРИДИЧЕСКАЯ ЗАЩИТА И СПВ -->
+      <section>
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-black text-white">Защита частной собственности <span class="text-cyan-400">(СПВ)</span></h2>
+          <span class="text-xs bg-red-950 border border-red-500/30 text-red-300 px-3 py-1 rounded-full font-bold">Без концессий • 100% частный актив</span>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 mb-4">
+          <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-center">
+            <span class="text-3xl font-black text-red-500 block mb-1">0%</span>
+            <span class="text-xs font-bold text-white block">Налог на прибыль</span>
+            <span class="text-[10px] text-slate-400">Первые 5 лет (вместо 25%)</span>
+          </div>
+          <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-center">
+            <span class="text-3xl font-black text-blue-500 block mb-1">0%</span>
+            <span class="text-xs font-bold text-white block">Налог на имущество и землю</span>
+            <span class="text-[10px] text-slate-400">Первые 5 лет работы</span>
+          </div>
+          <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-center">
+            <span class="text-3xl font-black text-emerald-400 block mb-1">7,6%</span>
+            <span class="text-xs font-bold text-white block">Страховые взносы ФОТ</span>
+            <span class="text-[10px] text-slate-400">На 10 лет (вместо 30%)</span>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl text-xs text-slate-300 space-y-2">
+          <h4 class="text-white font-bold text-sm">Механизм защиты от национализации:</h4>
+          <p>1. Отказ от Федерального закона №115-ФЗ (Концессии). Объект не передается на баланс города.</p>
+          <p>2. Участок берется в аренду под масштабный инвестиционный проект резидента СПВ.</p>
+          <p>3. После завершения стройки здание оформляется в частную собственность ООО.</p>
+          <p>4. Земельный участок выкупается в собственность компании по льготной кадастровой стоимости (ст. 39.20 ЗК РФ).</p>
+        </div>
+      </section>
+
+      <!-- СЛАЙД 10: КОНТАКТЫ И СЛЕДУЮЩИЙ ШАГ -->
+      <section>
+        <div class="flex items-center gap-4 mb-6">
+          <div class="flex items-center gap-1 font-black text-4xl">
+            <span class="w-12 h-12 rounded-full border-2 border-red-500 text-red-500 flex items-center justify-center">О</span>
+            <span class="w-12 h-12 rounded-full border-2 border-blue-500 text-blue-500 flex items-center justify-center">С</span>
+          </div>
+          <h2 class="text-3xl font-black text-white">Готовы к предметным переговорам</h2>
+        </div>
+
+        <div class="bg-gradient-to-br from-slate-900 via-blue-950/30 to-slate-900 border border-slate-700 p-6 rounded-3xl">
+          <h3 class="text-white font-bold text-base mb-3">Что готово к встрече:</h3>
+          <div class="grid grid-cols-2 gap-4 text-xs text-slate-300 mb-6">
+            <div>
+              <p class="mb-1"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Помесячная финансовая модель на 5 лет (Excel).</p>
+              <p><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Архитектурно-техническое задание чаши и здания.</p>
+            </div>
+            <div>
+              <p class="mb-1"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Предварительный пул тренеров для подписания LOI.</p>
+              <p><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Градостроительный анализ локаций в Снеговой Пади.</p>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-700/60 flex justify-between items-center">
+            <div>
+              <span class="text-xs text-slate-400 block font-semibold">Инициатор проекта:</span>
+              <span class="text-base font-black text-white">Основатель / Управляющий партнер «OPEN SWIM»</span>
+            </div>
+            <div class="text-right text-xs space-y-1">
+              <p class="text-slate-300 font-bold"><i class="fa-solid fa-location-dot text-red-500 mr-1"></i> г. Владивосток</p>
+              <p class="text-blue-400 font-bold"><i class="fa-brands fa-telegram mr-1"></i> Связь: t.me/kkkkk_ooooo</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      transition: 'slide',
+      backgroundTransition: 'fade',
+      center: false,
+      controls: true,
+      progress: true
+    });
+  </script>
+</body>
+</html>
